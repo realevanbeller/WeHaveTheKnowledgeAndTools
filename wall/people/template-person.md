@@ -5,9 +5,9 @@ city: "City, Neighborhood"
 bio: "2–3 line approved bio"
 badges:
   - "Mutual Aid"
-  - "Cleanup"
 verified_deeds:
   - "/wall/deeds/deed-example"
+layout: default
 ---
 
 # {{ page.display_name }}
@@ -15,6 +15,8 @@ verified_deeds:
 {{ page.bio }}
 
 ## Verified deeds
+{% raw %}
 {% for d in page.verified_deeds %}
 - [{{ d }}]({{ d }})
 {% endfor %}
+{% endraw %}

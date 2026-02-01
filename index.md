@@ -1,15 +1,20 @@
 ---
 title: Home
 layout: default
-summary: "Open-source government prototype — live, verifiable, and public-by-default."
+summary: "Landing page and quick links."
 ---
 
 # Welcome
 
-Inspect your government like code.
+This site is a living, public-by-default record of priorities, progress, and evidence.
 
-This site is a living record of priorities, progress, and evidence. Use the top navigation to jump to the Manifesto, my direct plan, immediate actions, stats/progress, awards, or contact.
+Quick links:
+- [Manifesto](/manifesto) — Principles that guide every decision.
+- [My direct plan](/plan) — Priorities, timelines, outcomes.
+- [If in office — IMMEDIATELY](/immediate) — Actionable first steps.
+- [Stats & Progress](/metrics) — Live metrics and progress bars.
+- [Goals](/goals) — All active initiatives.
+- [Good Citizen Awards](/awards) — Wall of Honor & verified deeds.
+- [Contact](/contact) — Email and contact instructions.
 
-- [Read the Manifesto](/manifesto)
-- [See the plan](/plan)
-- [Stats & Progress](/metrics)
+Tip: add `layout: default` to any new page's front matter to include the header/footer automatically.

@@ -3,12 +3,12 @@ slug: "beach-cleanup-2026-01"
 title: "Beach Cleanup — Santa Monica"
 date: 2026-01-10
 person_slug: "last-first"
-verification_level: "Verified (Documented)" # Verified (Direct), Verified (Documented), Verified (Witnessed), Recognized (Unverified)
+verification_level: "Verified (Documented)"
 proof_links:
   - "https://drive.google.com/..."
-  - "https://example.org/news"
 consent_obtained: true
 redacted: false
+layout: default
 ---
 
 # {{ page.title }}
@@ -18,10 +18,6 @@ redacted: false
 **Impact:** Collected 1,200 lbs trash; 56 volunteers.
 
 **Proof**
-{% for p in page.proof_links %}
-- [Link]({{ p }})
-{% endfor %}
+- [Link](https://drive.google.com/...)
 
 **Verification method:** {{ page.verification_level }}
-
-**Praise (optional)**: A short paragraph explaining why this was notable.

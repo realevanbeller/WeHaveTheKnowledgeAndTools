@@ -1,4 +1,4 @@
-// tiny nav toggle for mobile
+// small nav toggle for mobile
 document.addEventListener("DOMContentLoaded", function(){
   var btn = document.getElementById("nav-toggle");
   var nav = document.getElementById("site-nav");
