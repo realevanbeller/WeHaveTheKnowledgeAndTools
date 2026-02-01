@@ -1,6 +1,4 @@
-cat > _config.yml <<'YAML'
 title: "Evan Beller — Open Government"
 description: "Open-source government prototype"
 url: "https://realevanbeller.github.io"
 baseurl: "/WeHaveTheKnowledgeAndTools"
-YAML

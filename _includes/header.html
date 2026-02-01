@@ -1,20 +1,20 @@
 <header class="site-header" role="banner">
   <div class="wrap header-inner">
-    <a class="brand" href="/">{{ site.title | default: "Inspect your government like code." }}</a>
+    <a class="brand" href="{{ site.baseurl }}/">{{ site.title | default: "Inspect your government like code." }}</a>
 
     <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
       <span class="hamburger"></span>
     </button>
 
     <nav id="site-nav" class="main-nav" role="navigation" aria-label="Main">
-      <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
-      <a href="/manifesto" {% if page.url contains "manifesto" %}class="active"{% endif %}>Manifesto</a>
-      <a href="/plan" {% if page.url contains "plan" %}class="active"{% endif %}>My direct plan</a>
-      <a href="/immediate" {% if page.url contains "immediate" %}class="active"{% endif %}>If in office</a>
-      <a href="/metrics" {% if page.url contains "metrics" %}class="active"{% endif %}>Stats & Progress</a>
-      <a href="/goals" {% if page.url contains "goals" %}class="active"{% endif %}>Goals</a>
-      <a href="/awards" {% if page.url contains "awards" %}class="active"{% endif %}>Good Citizen Awards</a>
-      <a href="/contact" {% if page.url contains "contact" %}class="active"{% endif %}>Contact</a>
+      <a href="{{ site.baseurl }}/" {% raw %}{% if page.url == "/" %}class="active"{% endif %}{% endraw %}>Home</a>
+      <a href="{{ site.baseurl }}/manifesto" {% raw %}{% if page.url contains "manifesto" %}class="active"{% endif %}{% endraw %}>Manifesto</a>
+      <a href="{{ site.baseurl }}/plan" {% raw %}{% if page.url contains "plan" %}class="active"{% endif %}{% endraw %}>My direct plan</a>
+      <a href="{{ site.baseurl }}/immediate" {% raw %}{% if page.url contains "immediate" %}class="active"{% endif %}{% endraw %}>If in office</a>
+      <a href="{{ site.baseurl }}/metrics" {% raw %}{% if page.url contains "metrics" %}class="active"{% endif %}{% endraw %}>Stats & Progress</a>
+      <a href="{{ site.baseurl }}/goals" {% raw %}{% if page.url contains "goals" %}class="active"{% endif %}{% endraw %}>Goals</a>
+      <a href="{{ site.baseurl }}/awards" {% raw %}{% if page.url contains "awards" %}class="active"{% endif %}{% endraw %}>Good Citizen Awards</a>
+      <a href="{{ site.baseurl }}/contact" {% raw %}{% if page.url contains "contact" %}class="active"{% endif %}{% endraw %}>Contact</a>
     </nav>
   </div>
 </header>
