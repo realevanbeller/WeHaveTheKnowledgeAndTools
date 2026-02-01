@@ -1,0 +1,20 @@
+<header class="site-header" role="banner">
+  <div class="wrap header-inner">
+    <a class="brand" href="/">{{ site.title | default: "Inspect your government like code." }}</a>
+
+    <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav id="site-nav" class="main-nav" role="navigation" aria-label="Main">
+      <a href="/" {% raw %}{% if page.url == "/" %}class="active"{% endif %}{% endraw %}>Home</a>
+      <a href="/manifesto" {% raw %}{% if page.url contains "manifesto" %}class="active"{% endif %}{% endraw %}>Manifesto</a>
+      <a href="/plan" {% raw %}{% if page.url contains "plan" %}class="active"{% endif %}{% endraw %}>My direct plan</a>
+      <a href="/immediate" {% raw %}{% if page.url contains "immediate" %}class="active"{% endif %}{% endraw %}>If in office</a>
+      <a href="/metrics" {% raw %}{% if page.url contains "metrics" %}class="active"{% endif %}{% endraw %}>Stats & Progress</a>
+      <a href="/goals" {% raw %}{% if page.url contains "goals" %}class="active"{% endif %}{% endraw %}>Goals</a>
+      <a href="/awards" {% raw %}{% if page.url contains "awards" %}class="active"{% endif %}{% endraw %}>Good Citizen Awards</a>
+      <a href="/contact" {% raw %}{% if page.url contains "contact" %}class="active"{% endif %}{% endraw %}>Contact</a>
+    </nav>
+  </div>
+</header>

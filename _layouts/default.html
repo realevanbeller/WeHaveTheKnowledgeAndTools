@@ -8,36 +8,11 @@
   <meta name="description" content="{{ page.summary | default: site.description }}" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="/">{{ site.title | default: "Inspect your government like code." }}</a>
-
-      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
-        <span class="hamburger"></span>
-      </button>
-
-      <nav id="site-nav" class="main-nav" role="navigation" aria-label="Main">
-        <a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
-        <a href="/manifesto" class="{% if page.url contains '/manifesto' %}active{% endif %}">Manifesto</a>
-        <a href="/plan" class="{% if page.url contains '/plan' %}active{% endif %}">My direct plan</a>
-        <a href="/immediate" class="{% if page.url contains '/immediate' %}active{% endif %}">If in office (IMMEDIATELY)</a>
-        <a href="/metrics" class="{% if page.url contains '/metrics' %}active{% endif %}">Stats & Progress</a>
-        <a href="/awards" class="{% if page.url contains '/awards' %}active{% endif %}">Good Citizen Awards</a>
-        <a href="/contact" class="{% if page.url contains '/contact' %}active{% endif %}">Contact</a>
-      </nav>
-    </div>
-  </header>
-
+  {% include header.html %}
   <main class="wrap content" id="main-content" tabindex="-1">
     {{ content }}
   </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <small>Last site update: {{ site.time | date: "%Y-%m-%d" }} • Data & privacy disclaimer • <a href="/about">About</a></small>
-    </div>
-  </footer>
-
+  {% include footer.html %}
   <script src="/assets/js/site.js" defer></script>
 </body>
 </html>
