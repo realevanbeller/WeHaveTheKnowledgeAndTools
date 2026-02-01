@@ -1,28 +1,15 @@
 ---
-title: "Inspect your government like code."
+title: Home
 layout: default
-last_updated: 2026-02-01
-summary: "Open-Source Government for the 21st Century — a living prototype of civic transparency."
+summary: "Open-source government prototype — live, verifiable, and public-by-default."
 ---
 
-# Inspect your government like code.
+# Welcome
 
-## Short manifesto
-Legibility over polish. Process over personalities. Receipts over rhetoric. Progress over perfection. Public by default.
+Inspect your government like code.
 
-## How this works (3 steps)
-1. We publish goals, decisions, and evidence as plain files (Markdown + YAML).
-2. Every update is a git commit — public changelog.
-3. Community can verify, propose fixes, or volunteer.
+This site is a living record of priorities, progress, and evidence. Use the top navigation to jump to the Manifesto, my direct plan, immediate actions, stats/progress, awards, or contact.
 
-## Live snapshot
-- Goals active: **{{ site.data.metrics.goals_active | default: "—" }}**
-- Goals completed: **{{ site.data.metrics.goals_completed | default: "—" }}**
-- Avg days in stage: **{{ site.data.metrics.avg_days_in_stage | default: "—" }}**
-
-[See active goals](/goals)
-
----
-Last site update: `{{ page.last_updated }}`
-Data & privacy disclaimer: Public by default. Redactions applied where legally required.
-Contact: [contact@evanbeller.com](mailto:contact@evanbeller.com)
+- [Read the Manifesto](/manifesto)
+- [See the plan](/plan)
+- [Stats & Progress](/metrics)
