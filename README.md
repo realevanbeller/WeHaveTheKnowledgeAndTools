@@ -9,3 +9,4 @@ Files created by create_all.sh:
 
 Branch created: $BRANCH
 Commit created: "Add site layout, styles, scripts, and page skeletons"
+Pages rebuild trigger
